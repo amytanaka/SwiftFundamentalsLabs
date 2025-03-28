@@ -9,6 +9,9 @@
 
  Call the method from outside of the struct and print the result to ensure that it works properly.
  */
+print("\n\"Type Properties and Methods\" [10 of 10]")
+print("----------------------------------------------")
+
 struct RunningWorkout {
     var distance: Double
     var time: Double

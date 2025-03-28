@@ -10,9 +10,11 @@ struct User {
     var userName: String
     var email: String
     var age: Int
+    // type property (variable)
     static var currentUser = User(userName: "amyt", email: "usagisanamy@gmail.com", age: 24)
     
-    func longIn(user: User) {
+    // type method
+    static func logIn(user: User) {
         currentUser = user
         print("You are now logged in, \(user.userName)")
     }
@@ -26,6 +28,10 @@ print("Age (current user): \(User.currentUser.age)")
  
  Below, call the `logIn(user:)` method and pass in a different `User` instance than what you assigned to currentUser above. Observe the printout in the console.
  */
+var newUser = User(userName: "okasakij", email: "halotoday@aol.com", age: 47)
+User.logIn(user: newUser)
 
-
+print("Username (current user): \(User.currentUser.userName)")
+print("Email (current user): \(User.currentUser.email)")
+print("Age (current user): \(User.currentUser.age)")
 //: [Previous](@previous)  |  page 9 of 10  |  [Next: App Exercise - Type Properties and Methods](@next)
